@@ -1,1 +1,2 @@
-Hello Work
+#! /usr/bin/bash
+sudo apt-get update
