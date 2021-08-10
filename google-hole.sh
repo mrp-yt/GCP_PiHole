@@ -10,4 +10,8 @@ sudo tailscale up &&
 echo 'Link TailScale account (waiting 20 sec)'&&
 sleep 20 &&
 sudo docker run -dit --name pihole -p 80:80 -p 53:53 -p 53:53/udp -p 67:67 -p 67:67/udp pihole/pihole &&
-echo 'PiHole Has been installed'
+echo 'PiHole Has been installed' &&
+sudo docker pull pihole/pihole &&
+docker run -dit -nname pihole -p 80:80 -p 53:53 -p 53:53/udp -p 67:67 -p 67:67/udp pihole/pihole:latest &&
+echo "Pihole Installed "
+sleep 10
