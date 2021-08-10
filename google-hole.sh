@@ -24,7 +24,7 @@ sudo tailscale up &&
 echo "-----------------
 echo "Installing PiHole" 
 sleep 5
-sudo docker run -dit --name pihole -p 80:80 -p 53:53 -p 53:53/udp -p 67:67 -p 67:67/udp pihole/pihole &&
+sudo docker run -dit --name pihole -p 80:80 -p 53:53 -p 53:53/udp -p 67:67 -p 67:67/udp pihole/pihole:latest
 echo "PiHole Has been installed" 
 echo "Pihole Installed"
-echo "Access Pihole dashboard >>>   http://<tailscale_ip:88/admin   <<<"
+echo "Access Pihole dashboard https://[tailscale_assigned_ip]:8/admin"
