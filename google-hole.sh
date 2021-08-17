@@ -6,4 +6,5 @@ curl -sSL https://get.docker.com | sh &&
 sudo docker run -dit --name pihole -p 80:80 -p 53:53 -p 53:53/udp -p 67:67 -p 67:67/udp -e WEBPASSWORD= pihole/pihole &&
 sudo apt-get install tailscale && 
 sudo tailscale up &&
+sleep 5 &&
 ip addr show dev tailscale0
