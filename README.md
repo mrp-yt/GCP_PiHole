@@ -13,6 +13,10 @@
 * Start SSH Connection to VM
 * Run this command
   ```
-  curl -o https://raw.githubusercontent.com/mrp-yt/GCP_PiHole/main/google-hole.sh | sudo bash
+  sudo apt install wget -y &&
+  sudo wget https://raw.githubusercontent.com/mrp-yt/GCP_PiHole/main/google-hole.sh &&
+  sudo bash google-hole.sh
   ```
+  This will install wget, pull google-hole.sh script and run it. Script will install docker and setup pihole container with port `80` opened. Will install TailScale and run it.\
+  TailScale will give you url to activate connection with your TailScale account
   
