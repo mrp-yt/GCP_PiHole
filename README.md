@@ -19,4 +19,4 @@
   ```
   This will install wget, pull google-hole.sh script and run it. Script will install docker and setup pihole container with port `80` opened. Will install TailScale and run it.\
   TailScale will give you url to activate connection with your TailScale account
-  
+* After connection to TailScale has been acitivated you can conenct to PiHole dashboard using `http://Tailscale_assigned_ip:80`
