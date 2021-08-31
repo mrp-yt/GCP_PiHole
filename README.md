@@ -10,5 +10,9 @@
   - If al lsellected correctly, on the right side you should see something like this:
   `Your first 744 hours of f1-micro instance usage are free this month`
 * While VM getting craeted, register for [TailScale](https://tailscale.com/) service (it's free)
-*  
+* Start SSH Connection to VM
+* Run this command
+  ```
+  curl -o https://raw.githubusercontent.com/mrp-yt/GCP_PiHole/main/google-hole.sh | sudo bash
+  ```
   
